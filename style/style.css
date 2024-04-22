@@ -35,15 +35,16 @@ footer {
     display: flex;
     flex-direction: column;
     /* min-height: 30%; */
+   
 }
 
 .upgrade-bar {
     background-color: rgb(111, 10, 10);
-    height: 10%;
+    
     display: flex;
     justify-content: flex-end;
-    /* height: 12vh;
-    position: fixed;
+    height: 12vh;
+    /* position: fixed;
     width: 100%; */
 }
 
@@ -65,22 +66,47 @@ footer {
    
 }
 
-.recently-played {
-    display: flex;
-    flex-direction: column;
-
+.songs-container {
+    overflow-y: auto;
 }
+
+
+.recently-played {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.created-for-joe {
+    width: 40%;
+    padding: 1rem;
+}
+
 
 .songs {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
+
+
 .song {
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    margin: 1;
+    /* height: 100px;
+    width: 100px; */
+    /* background-color: red; */
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    min-height: 150px;
     
 
 }
+
+.song img {
+    object-fit: cover;
+    width: 100%;
+}
+
