@@ -64,3 +64,23 @@ footer {
     justify-content: center;   
    
 }
+
+.recently-played {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.songs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.song {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 1;
+    
+
+}
