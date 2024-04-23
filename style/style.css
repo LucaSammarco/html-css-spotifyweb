@@ -23,7 +23,7 @@ body {
 .header-bar {
 
     height: calc(100vh - 100px);
-    width: 100px;
+    width: 150px;
     background-color: #7d1010;
     
 
@@ -47,13 +47,18 @@ main {
     background-color: #141922;
     flex-direction: column;  
     display: flex; 
+    overflow-y: auto;
+    
 }
 
 .upgrade-bar {
     background-color: #080b12;
-    
     display: flex;
     justify-content: flex-end;
+    height: 80px;
+    width: calc(100% - 150px);
+    position: fixed;
+    opacity: 0.8;
     
 
 }
@@ -65,6 +70,11 @@ main {
     border: solid white;
     border-width: 1px;
     background-color: #000000;
+}
+
+
+.nav-bar {
+    margin-top: 80px;
 }
 
 .nav-bar nav ul{
@@ -85,7 +95,7 @@ main {
 }
 
 .songs-container {
-    overflow-y: auto;
+    
 }
 
 
