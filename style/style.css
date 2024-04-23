@@ -14,24 +14,46 @@ body {
 }
 
 
-/* header { 
-    height: calc(100vh - 100px);
-    width: 120px;
-    background-color: #000000;
-} */
+header { 
+   display: flex;
+}
 
 .header-bar {
 
-    height: calc(100vh - 100px);
-    width: 150px;
-    background-color: black;
-    
+    height: calc(100vh - 73px);
+    width: 200px;
+    background-color: rgb(132, 19, 19)
+}
 
+
+.header-nav  ul{
+    
+}
+
+.header-nav ul li{
+   
+    display: flex;
+    padding: 0.5rem;
+    
+    font-size: 0.8rem;
+    
+    color: #7e7f84;
+    font-weight: bold;
+    
+    
+   
+}
+
+.logo-section img {
+    padding: 1rem;
+    width: 80%;
+    padding: 1rem 2rem 1rem 1rem;
+    
 }
 
 footer {
     background-color: #282828;
-    height: 100px;
+    height: 73px;
     width: 100vw;
     position: absolute;
     bottom: 0;
@@ -42,7 +64,7 @@ main {
 }
 
 .main-content {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 73px);
     width: 100%;
     background-color: #141922;
     flex-direction: column;  
@@ -110,7 +132,7 @@ main {
 .recently-played {
     width: 100%;
     padding: 1rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -146,7 +168,7 @@ main {
 
 .rp-song img {
     object-fit: cover;
-    width: 250px;
+    width: 200px;
     margin-bottom: 1rem; 
    
 }   
@@ -163,12 +185,12 @@ main {
 }
 
 .created-for-joe h2 {
-    /* margin-bottom: 3rem; */
+    margin-bottom: 0.5rem;
     font-weight: 900;
 }
 
 .created-for-joe p {
-    margin-bottom: rem;
+    margin-bottom: 2rem;
 }
 
 .cfj-songs {
@@ -185,7 +207,7 @@ main {
     align-items: center;
     width: 250px;
     height: 250px;
-    margin-bottom: 3rem; 
+    margin-bottom: 1rem; 
    
 
 
@@ -195,8 +217,9 @@ main {
 .cfj-song img {
    
     object-fit: cover;
-    width: 250px;
+    width: 200px;
     margin-bottom: 1rem; 
+
 }  
 
 
@@ -207,9 +230,14 @@ main {
 }
 
 .popular-artists h2 {
-    margin-bottom: 3zrem;
+    margin-bottom: 0.5rem;
     font-weight: 900;
 }
+
+.popular-artists p {
+    margin-bottom: 2rem;
+}
+
 
 .pa-songs {
     display: flex;
@@ -227,7 +255,7 @@ main {
 
 .pa-song img {
     object-fit: cover;
-    width: 250px;
+    width: 200px;
     margin-bottom: 1rem;
     border-radius: 50%;
 }
