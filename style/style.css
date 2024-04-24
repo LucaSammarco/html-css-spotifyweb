@@ -57,9 +57,12 @@ header {
 
 .instal {
     margin-top: auto;
+    padding: 1rem;
 }
 
-
+.instal hr{
+    margin: 0.5rem 0;
+}
 
 
 
@@ -289,24 +292,42 @@ footer {
     align-items: center;
 }
 
-.footer-elements {
+.footer-elements-left {
     padding: 0.5rem;
     display: flex;
     align-items: center;
 }
 
 
-.footer-elements img {
+.footer-elements-left img {
     width: 40px;
 }
 
-.footer-elements p:first-child {
+.footer-elements-left p:first-child {
 
 }
 
-.footer-elements p:nth-child(2) {
+.footer-elements-left p:nth-child(2) {
     color: red;
 
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+}
+
+.player-bar {
+    display: flex   ;
+}
+
+
+.volume-bar {
+    display: flex;
 }
 
 @media (max-width: 768px)  {
