@@ -21,7 +21,7 @@ header {
 
     height: calc(100vh - 73px);
     width: 200px;
-    background-color: rgb(132, 19, 19);
+    background-color: #080b12;
     display: flex;
     flex-direction: column;
     
@@ -29,22 +29,91 @@ header {
 
 
 .header-nav  ul{
-    
+    margin-bottom: 2rem;
 }
 
 .header-nav ul li{
    
     display: flex;
-    padding: 0.5rem;
-    
     font-size: 0.8rem;
     
+    
+}
+
+.header-nav ul li:first-child {
+    border-left: 4px solid #adff2f;
+    
+}
+
+.fa-house {
+    margin-left: -4px;
+}
+
+.header-nav ul li a {
+    color: #7e7f84;
+    font-weight: bold; 
+    text-decoration: none;
+    padding: 0.5rem 1rem; 
+    font-size: 0.8rem;  
+}
+
+.header-nav ul li a i {
+    font-size: 1.3rem; 
+    color: inherit;
+    margin-right: 0.2rem;
+    
+}
+
+.header-nav ul li:first-child a {
+    
+}
+
+.playlist h2 {
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.playlist > a {
+    text-decoration: none;
+    margin-left: 1rem;
+    width: 100px;
+    display: flex;
+    text-align: center;
+    text-indent: each-line;
+    align-self: first baseline;
+    align-items: center;
+    text-wrap: nowrap;
     color: #7e7f84;
     font-weight: bold;
-    
-    
-   
+    margin-bottom: 1rem;
+
 }
+
+.fa-square-plus {
+    font-size: 2.5rem;
+    color: #7e7f84;
+    margin-right: 0.5rem;
+}
+
+.playlist ul li {
+    margin-bottom: 0.5rem;
+}
+
+.playlist ul li a {
+    font-size: 0.8rem;
+    color: #7e7f84; 
+    text-decoration: none; 
+    padding: 0.5rem 1rem; 
+    font-weight: bold; 
+}
+
+.playlist ul li a i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
 
 .logo-section img {
     padding: 1rem;
@@ -56,13 +125,57 @@ header {
 
 
 .instal {
-    margin-top: auto;
+    display: flex;
+    flex-direction: column;  /
+    align-items: center;     
     padding: 1rem;
+    gap: 10px;
+    margin-top: auto;
 }
 
 .instal hr{
-    margin: 0.5rem 0;
+    margin: 0.2rem 0;
+    color: #7e7f84;
 }
+
+.instal p:first-child {
+    color: #7e7f84;
+    font-size: 0.8rem;
+}
+
+.instal p:first-child i {
+    color: #7e7f84;
+}
+
+.instal .user-info i {
+    color: #c7c7c7;
+    font-size: 1.5rem;
+    margin-right: 0.3rem;
+    
+}
+
+.instal .user-info p {
+    color: #c7c7c7;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+.user-info {
+    display: flex;
+    align-items: center; /
+}
+.fa-circle-user {
+    font-size: 1.5rem; /
+}
+
+.instal > p, .user-info > p {
+    color: #c7c7c7;
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: bold;
+}
+
 
 
 
@@ -80,10 +193,6 @@ main {
     
 }
 
-::-webkit-scrollbar {
-    width: 300px;
-  }
-  
 
 .upgrade-bar {
     background-color: #080b12;
@@ -104,6 +213,9 @@ main {
     border: solid white;
     border-width: 1px;
     background-color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 
@@ -118,8 +230,7 @@ main {
     align-content: center;
     padding: 0 15rem;
     margin-bottom: 2rem;
-
-   
+    gap: 1rem;
 }
 
 .nav-bar nav ul li{
@@ -128,72 +239,106 @@ main {
     justify-content: center;
     text-transform: uppercase;
     font-size: 0.8rem;
-    margin-right: 0.8rem;
     color: #7e7f84;
     font-weight: bold;
     white-space: nowrap;
+    text-decoration: none;
     
    
 }
 
-.songs-container {
-    
+.nav-bar nav ul li a {
+    color: inherit;
+    text-decoration: none; 
+    display: block; 
+    padding: 5px 10px; 
 }
 
 
+.songs-container {
+    flex-shrink: 1;
+}
+
+
+.songs-container h2{
+    font-size: 1.5rem;
+    
+}
+
+.song-title {
+    font-size: 0.9rem;
+}
+
+.Subtitle {
+    font-size: 0.8rem;
+}
+
 .recently-played {
-    width: 100%;
+    width: calc(100% - 200px);
+}
+
+.recently-played {
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    flex-shrink: 1;
 }
 
 
 .recently-played h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-weight: 900;
 }
 
+.songs p:first-of-type {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
 
-
-
-.rp-songs {
-    display: flex;
-    /* justify-content: space-between; */
-    
+.song p:nth-of-type(2){
+    color:#7e7f84;
+    text-align: center;
 }
 
 
+.songs {
+    display: flex;
+    
+}
 
-.rp-song {
+.song {
+    flex: 1 1 auto; 
+}
 
-    /* background-color: red;  */
+.song {    
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 245px;
-    height: 317px;
-  }
-
-
+    max-width: 250px;
+    flex: 1 1;
+}
     
 
 
-.rp-song img {
+
+
+
+
+.song img {
     object-fit: cover;
-    width: 245px;
+    width: 100%;
     margin-bottom: 1rem; 
-   
+
 }   
 
-.rp-song .song-title {
-   
-}
+
 
 
 
 .created-for-joe {
-    width: 40%;
+    
     padding: 1rem;
 }
 
@@ -206,34 +351,16 @@ main {
     margin-bottom: 2rem;
 }
 
-.cfj-songs {
+/* .cfj-songs {
     display: flex;
     align-items: first baseline;
+} */
+
+.created-for-joe > div:nth-child(3) {
+    width: 33.3%;
+    height: auto;
 }
 
-.cfj-song {
-
-    /* background-color: red;  */
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    height: 250px;
-    margin-bottom: 1rem; 
-   
-
-
-    
-}
-
-.cfj-song img {
-   
-    object-fit: cover;
-    width: 245px;
-    margin-bottom: 1rem; 
-
-}  
 
 
 .popular-artists {
@@ -251,34 +378,14 @@ main {
     margin-bottom: 2rem;
 }
 
-
-.pa-songs {
-    display: flex;
-    align-items: first baseline;
+.popular-artists > div:nth-child(3) {
+    width: 33.3%;
+    height: auto;
 }
 
-.pa-song {
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    height: 250px;
+.popular-artists img {
+   border-radius: 50%;
 }
-
-.pa-song img {
-    object-fit: cover;
-    width: 245px;
-    margin-bottom: 1rem; 
-    border-radius: 50%;
-}
-
-.rp-songs, .cfj-songs, .pa-songs {
-    
-    flex-wrap: wrap;
-    
-}
-
 
 
 footer {
@@ -289,11 +396,11 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .footer-elements-left {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     display: flex;
     align-items: center;
 }
@@ -301,43 +408,148 @@ footer {
 
 .footer-elements-left img {
     width: 40px;
+    margin: 0 0.5rem;
 }
 
-.footer-elements-left p:first-child {
+.footer-elements-left i {
+    color: #7e7f84;
+}
 
+
+.footer-elements-left p:first-child {
+    margin-right: 0.3rem;
+    color: #c7c7c7;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
 .footer-elements-left p:nth-child(2) {
-    color: red;
+    color: #7e7f84;
+    font-size: 0.8rem;
+    margin-right: 2rem;
+}
 
+.footer-elements-left i {
+    
+    margin: 0 0.5rem;
+}
+
+.footer-elements-center {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    width: 700px;
 }
 
 .player {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
+
 
 .buttons {
     display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
 }
 
+.buttons i.fa-circle-play {
+    font-size: 1.5em;
+    align-self: center;
+    line-height: 1rem;
+    
+}
 .player-bar {
-    display: flex   ;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    padding: 0 15px; 
+    max-width: 900px;
 }
 
+.player-bar p {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color:  #7e7f84;
+    align-items: center;
+    margin: 0.3rem 1rem;
+    display: flex;
+    
+}
+
+.progress-bar {
+    height: 5px;
+    width: 25%;
+    background-color: #c7c7c7;
+    align-items: center;
+}
+
+.footer-elements-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 .volume-bar {
-    display: flex;
+    height: 5px;
+    width: 100px;
+    background-color: #7e7f84;
+    align-items: center;
+    margin: 0.3rem 1rem;
+    
 }
+
+
+
+
+.footer-elements-right i{
+    color: #c7c7c7;
+}
+
+
+/* Hover effects */
+
+
+* a:hover {
+    color: white;
+  }
+
+
+ul li a:hover {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px)  {
 
-    .rp-songs {
+    .songs {
         display: flex;
         flex-wrap: wrap;
     }
 
 }
+
 
 
 @media (max-width: 576px) {
